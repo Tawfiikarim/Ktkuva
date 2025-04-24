@@ -5,45 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header, footer {
-            text-align: center;
-            margin: 20px 0;
-        }
-        section {
-            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
         a {
-            color: blue;
             text-decoration: none;
+            color: #ffffff;
+        }
+        a:hover {
+            color: #ffdd57;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 20px;
+        }
+
+        /* Navigation Styles */
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #6a11cb;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .projects a {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #6a11cb;
+            border-radius: 5px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my personal space!</p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my work and know more about me!</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <section>
+    <!-- About Section -->
+    <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a [Your Profession/Skill] passionate about [Your Interests].</p>
+        <p>Hello! I'm <strong>[Your Name]</strong>, a passionate <strong>[Your Profession]</strong> with a love for creating innovative and impactful projects. I specialize in <strong>[Your Skills/Expertise]</strong> and enjoy tackling challenging problems with a creative mindset.</p>
+        <p>When I'm not working, you can find me exploring <strong>[Your Hobbies]</strong> or learning <strong>[Something You're Learning]</strong>.</p>
     </section>
 
-    <section>
-        <h2>My Project</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
         <p>Check out my portfolio project below:</p>
-        <!-- portfolio.pdf -->
-        <a href="portfolio.pdf" target="_blank">View Portfolio (PDF)</a>
+        <a href="portfolio.pdf" target="_blank">View My Portfolio (PDF)</a>
     </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 [Your Name]</p>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
     </footer>
 </body>
 </html>
